@@ -1,0 +1,279 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.BookingContainer {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #000b14f6;
+}
+
+
+
+.headerContent121 {
+  margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background: #002549;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.headerContent121 .logo121 {
+  height: 60px;
+  margin-right: 15px;
+}
+.headerContent121 .LocalHeader121 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.btnVoiceAssistant111 {
+  background-color: #4caf50; /* Green background */
+  border: none;
+  margin-left: 850px;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+
+.btnVoiceAssistant111:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.btnVoiceAssistant111:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+}
+
+.btnVoiceAssistant111 .fa-microphone {
+  font-size: 20px; /* Larger microphone icon */
+  margin-right: 5px;
+}
+
+.btnVoiceAssistant111 span {
+  display: none; /* Hide the text by default */
+}
+
+.btnVoiceAssistant111.listening span {
+  display: inline-block; /* Show the text when listening */
+  font-size: 14px;
+  margin-left: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Ticket_form {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Input_Group_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px; /* Spacing between groups */
+}
+
+.Input_Group {
+  flex: 1; /* Equal width for each group */
+  display: flex;
+  flex-direction: column;
+}
+
+.Input_Label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.Source_input,
+.Destination_input,
+.Date_input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.Source_input:focus,
+.Destination_input:focus,
+.Date_input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 8px 15px rgba(76, 175, 80, 0.2);
+}
+
+.Search_Ticket {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #091c46, #1f7dca);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.Search_Ticket:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(33, 150, 243, 0.3);
+}
+.Ticket_ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.Ticket_li {
+  display: flex; /* Align image and details side by side */
+  flex-direction: row; /* Ensure it's horizontal */
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Full width for the card */
+}
+
+.Ticket_li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Train_Image_Column {
+  flex: 0 0 30%; /* Image takes 30% of the row */
+  max-width: 30%;
+  margin-right: 20px;
+}
+
+.Train_Image {
+  width: 100%; /* Image fills its container */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.Train_Details_Column {
+  flex: 1; /* Details take the remaining space */
+  display: flex;
+  flex-direction: column; /* Stack details vertically */
+  gap: 10px; /* Add space between details */
+}
+.same{
+  font-size: 18px;
+  color:#011f5f;
+}
+.Train_Name,
+.Train_Date,
+.Train_Departure,
+.Train_Arrival {
+  font-family:'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+.Train_Details_Column {
+  padding: 15px;
+  color: #555;
+}
+
+.Train_Name,
+.Train_Date,
+.Train_Departure,
+.Train_Arrival {
+  display: block;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.Book_Ticket_Button {
+  color: white;
+  margin-top: 15px;
+  padding: 12px 15px;
+   background: #27ae60;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Book_Ticket_Button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(33, 150, 243, 0.3);
+}
+
+@media (max-width: 768px) {
+  .Ticket_li {
+    flex-direction: column; /* Stack image and details on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .Train_Image_Column {
+    max-width: 100%; /* Image takes full width */
+    margin-right: 0;
+    margin-bottom: 15px; /* Space between image and details */
+  }
+}
+
+
+/* No Trains Found */
+.Ticket_Pi {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+  margin-bottom: 207px;
+  color: #ffffffa8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Input_Group {
+    width: 100%;
+  }
+
+  .Train_Container {
+    grid-template-columns: 1fr;
+  }
+}

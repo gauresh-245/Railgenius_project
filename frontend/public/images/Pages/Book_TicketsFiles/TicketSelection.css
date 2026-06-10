@@ -1,0 +1,352 @@
+.TicketSelection_Conatiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 90%;
+  margin: 20px auto;
+  gap: 20px;
+  background-color: rgb(24, 25, 26);
+  
+}
+.MainTicketSelectionClass{
+  background-color: #000b14f6;
+  
+}
+
+.headerContent1212 {
+
+    margin-left: -20px;
+    margin-right: -20px;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background: #002549;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.headerContent1212 .logo1212 {
+  height: 60px;
+  margin-right: 15px;
+}
+.headerContent1212 .LocalHeader1212 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.SelectionContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.header{
+   color: white;
+ 
+  text-align: center;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
+ h1{
+  font-size: 60px;
+  font-style: italic;
+}
+
+.tickets {
+
+  margin-bottom: 80px;
+  margin-top: 30px;
+  border-radius: 15px;
+  height: fit-content;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.ticket-selector {
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.seats-Two {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+}
+
+.title {
+  margin-bottom: 35px;
+  font-size: 30px;
+  display: flex;
+  width: 550px;
+  background-color: #000000;
+  align-items: center;
+  justify-content: center;
+  font-style: oblique;
+  font-weight: 900;
+  padding: 20px;
+  
+}
+
+
+strong {
+  color: #ceca00;
+}
+
+.status {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item {
+  font-size: 17px;
+  position: relative;
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+  padding: 7px 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.1) rotateX(10deg) rotateY(-10deg);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translate(0, -50%);
+  width: 18px;
+  height: 35px;
+  background: linear-gradient(145deg, #d4d4d4, #f0f0f0);
+  outline: 1px solid rgb(120, 120, 120);
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(255, 255, 255, 0.5);
+}
+
+
+.item:nth-child(3)::before{
+  background:  #356394;
+  outline: none;
+}
+
+
+.item:nth-child(2)::before{
+  background: #d71527;
+  outline: none;
+}
+
+
+.item:nth-child(1)::before{
+  background:#065f1c;
+  outline: none;
+}
+
+
+
+
+
+
+/* Seat grid layout */
+.SeatGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Main seats take 3/4th space, side seats take 1/4th */
+  column-gap: 2px; /* Gap between main and side seats */
+  row-gap: 15px; /* Gap between rows */
+}
+.Section2{
+    margin-top: 25px;
+}
+
+.Section3{
+    margin-top: 25px;
+}
+/* Main seats */
+.MainSeats, .SideSeats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.Seat {
+
+  padding: 10px;
+  margin: 6px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.Seat.Available {
+  background-color:#065f1c;
+}
+
+.Seat.Booked {
+  background-color: #d71527;
+  cursor: not-allowed;
+}
+
+.Seat.Selected {
+  background-color: #356394;
+}
+
+/* Hover Effects for 3D */
+.Seat:hover {
+  transform: translateY(-5px) rotateX(10deg) rotateY(10deg);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+}
+/* Colors for Main Seats */
+
+
+
+
+
+
+/* Seat number */
+.SeatNo {
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  display: flow-root;
+}
+
+/* Seat type */
+.SeatType {
+  color: white;
+  font-size: 15px;
+    font-weight: 900;
+  margin-top: 5px;
+}
+
+
+.SelectedSeatDetails {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 20px; /* Space between elements */
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: linear-gradient(135deg, 
+#a73737,
+#7a2828 ); /* Gradient background */
+  max-width: 600px; /* Set a max width */
+  margin: 20px auto; /* Center container on the page */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.seat-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if there are many seats */
+  gap: 15px; /* Space between seat details */
+  justify-content: center; /* Center seat details horizontally */
+}
+
+.seat-details {
+  display: flex;
+  flex-direction: column; /* Stack details vertically */
+  gap: 8px; /* Space between details */
+  padding: 10px;
+  color: white;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color:#007bff;
+  width: max-content; /* Fixed width for uniformity */
+  text-align: center; /* Center align text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3 ease;
+}
+
+.seat-details:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: #007bffd8;
+  border-color: #ff7e5f;
+}
+
+.head3{
+  font-size: 25px;
+  color: white;
+  font-style: italic;
+}
+
+.total-price {
+  font-size: 25px;
+  color: rgb(251, 255, 0);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/* Video container styling */
+.video-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Optional for better contrast */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+.BookingDetails_Button {
+  display: block;
+  width: calc(100% - 40px); /* Full width minus padding */
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.BookingDetails_Button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+

@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header50{
+   padding-top: 100px;
+}
+.Header-Holiday{
+ 
+    font-size: 3rem;
+    color: white; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(255, 99, 71, 0.5); 
+    letter-spacing: 2px; 
+    transform: perspective(500px) rotateX(10deg); 
+    text-transform: uppercase; 
+   background: linear-gradient(45deg, #4b6cb7, #182848); 
+    font-weight: 900;
+    border-radius: 20px;
+    width:fit-content;
+    margin-left: 600px;
+    padding: 15px 40px;
+    font-family:cursive;
+}
+
+
+.Header-Holiday::after {
+    content: "";
+    display: block;
+    width: 101px; 
+    height: 5px; 
+    background-color: #1e90ff;
+    position: absolute;
+    margin-left: 45px;
+   
+    border-radius: 10px; 
+}
+.main-slider {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 250px; 
+    height: 150px; 
+    transform-style: preserve-3d;
+    animation: rotateSlider 70s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes rotateSlider {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(370deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(360px);
+}
+.Main_Container23{
+  background-color: white;
+}
+
+.slider span img {
+    width: 100%;
+    height: 110%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.5s;
+    box-shadow: 3px 3px 5px 5px rgba(116, 116, 116, 0.671);
+  
+}
+
+.slider span:hover img {
+    transform: scale(1.1);
+}
+
+
+.AboutUs-Section{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding-top: 50px;
+    background-color: #ddd;
+}
+
+.AboutUs_container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+    width: 45%;
+    height: 20px;
+}
+.AboutUs_title{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(255, 99, 71, 0.5); 
+    letter-spacing: 2px; 
+    transform: perspective(500px) rotateX(10deg); 
+  background: linear-gradient(45deg, #4b6cb7, #182848); 
+  border-radius: 10px;
+}
+.AboutUs_H{
+  font-size: 50px;
+  color: white;
+}
+
+.AboutUs-ImageSection{
+    float: right;
+   
+    width: 500px;
+}
+
+.AboutUs-ImageSection img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 5px darkgray;
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.content-section .AboutUs_content h3{
+    margin-top: 20px;
+    color: #2b2b2b;
+    margin-bottom: 25px;
+}
+
+.content-section .AboutUs_content p{
+    margin-top: 10px;
+    color: #182848bd;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content-section .AboutUs_content .AboutUs_button a{
+    background-color: #3d3d3d;
+    padding: 12px 14px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.content-section .AboutUs_content .AboutUs_button{
+    margin-top: 30px;
+}
+
+
+.content-section .AboutUs_content .AboutUs_button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+
+.content-section .AboutUs_social{
+    margin-top: 40px;
+
+}
+
+.content-section .AboutUs_social i{
+    color: #a52a2a;
+    font-size: 30px;
+    transition: font-size 0.3s ease, color 0.3s ease; 
+    padding: 0px 15px;
+}
+.content-section .AboutUs_social i:hover{
+    font-size: 40px;
+}
+
+.Service_Container {
+  
+  text-align: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.Service_Container h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 130px;
+  margin-top: 60px;
+}
+
+.Service_Container h1::after {
+  content: "";
+  display: block;
+  width: 100px; 
+  height: 6px; 
+  background-color: #1e90ff; 
+  margin: 10px auto 0; 
+}
+
+.Service_Container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+}
+
+.Service_Container .service {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.Service_Container .service:hover {
+  transform: translateY(-10px);
+}
+
+.Service_Container .service i {
+  font-size: 2em;
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+.Service_Container .service h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Service_Container .service p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+
+
+
+
+.Hotel_Container {
+  background: linear-gradient(45deg, 
+#003973, #E5E5BE); 
+  color: black;
+  padding: 40px;
+
+}
+
+.TODO .head {
+    color: #2a2a2a;
+    padding: 30px;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+.TODO .head2 {
+  color: rgb(9, 39, 82);
+  font-size: 33px;
+  font-weight: 900;
+  text-align: center;
+  width: 400px;
+  margin: 60px auto;
+}
+
+.TODO .head3 {
+    margin-top: 180px;
+    color: rgb(0 20 48);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 75px;
+    padding-left: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.TODO .head4 {
+     margin-top: 180px;
+    color: rgb(0 20 48);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 75px;
+    padding-left: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+
+.Card1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.info1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.line{
+  margin-bottom:-20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  perspective: 1000px; 
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transform: rotateY(0);
+  transition: transform 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: rotateY(15deg); /* 3D rotation effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  border-bottom: 2px solid #2980b9;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  background-color: #2980b9;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+  flex-direction: row-reverse;
+  margin-top: 4px;
+}
+
+
+
+.Card_Header{
+  font-size: 25px;
+  font-style: italic;
+}
+
+.Holiday_para{
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  
+}
+
+.para2{
+  font-size: 20px;
+  margin-top: -8px;
+  color: #070707;
+}
+
+.Explore{
+      font-size: 20px;
+    margin-top: 20px;
+    background: blue;
+    color: white;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 15px 25px;
+
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Container Styles */
+.popularContainerWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titleContainer h3 {
+  font-size: 44px;
+  margin-top: 105px;
+  font-weight: bold;
+  color: #253e57;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+/* Grid Layout */
+.routesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+}
+
+/* Route Item (Card) Styles */
+.routeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.routeItem:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styles */
+.routeIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Title Styles */
+.routeTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003366;
+  margin: 10px 0;
+}
+
+/* Via Route Styles */
+.routeVia {
+  font-size: 14px;
+  color: #555;
+}
+
+.routeVia span {
+  font-weight: bold;
+  color: #333;
+}
+
+.routeVia a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.routeVia a:hover {
+  text-decoration: underline;
+  color: #005bb5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .routesGrid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+
+  .routeItem {
+    padding: 10px;
+  }
+
+  .routeTitle {
+    font-size: 16px;
+  }
+
+  .routeVia {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .routesGrid {
+    grid-template-columns: 1fr; /* Single column */
+  }
+
+  .routeItem {
+    padding: 10px;
+  }
+
+  .routeTitle {
+    font-size: 16px;
+  }
+
+  .routeVia {
+    font-size: 12px;
+  }
+}

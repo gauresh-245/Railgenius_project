@@ -1,0 +1,223 @@
+/* Container for the entire train list page */
+.trainListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4; /* Light gray background */
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.headerContentOnLocalPage {
+ display: flex;
+
+ width: 105%;
+  margin-top: -20px;
+  margin-left: -20px;
+  align-items: center;
+  z-index: 2;
+  padding: 15px 20px;
+  background: #00274e;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo5 {
+ height: 60px;
+  margin-right: 15px;
+}
+
+.LocalHeader5 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+
+
+.Combine{
+  display: flex;
+  flex-direction: row;
+ }
+.LocalBookingButton{
+  margin-left: 640px; 
+}
+.LocalBookingButton {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 17px; /* Adjust font size */
+  font-weight: bold; /* Bold text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 16px 40px; /* Add padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.LocalBookingButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.LocalBookingButton:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+.trainTime{
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.trainPlatform{
+  font-size: 20px;
+}
+
+
+
+
+
+
+/* Heading for trains list */
+.headFromDestination {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Train List Styling */
+
+
+
+
+
+/* Train List Container */
+.localUI {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Individual Train List Item */
+.LocalLI {
+  background: #ffffff; /* White Background */
+  border: 1px solid #e0e0e0; /* Light Gray Border */
+  border-left: 5px solid #4CAF50; /* Green Left Border Accent */
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover Effect */
+.LocalLI:hover {
+  border-left-color: #007bff; /* Change Left Border Color */
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Train Name Styling */
+.trainName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Train Info: Time and Platform */
+.trainInfo {
+  display: flex;
+  gap: 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Time and Platform Icons */
+.trainTime::before,
+.trainPlatform::before {
+  margin-right: 5px;
+}
+
+.trainTime::before {
+  content: "🕒";
+  color: #007bff;
+}
+
+.trainPlatform::before {
+  content: "🚉";
+  color: #4CAF50;
+}
+
+/* Right Section Styling */
+.rightSection {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Right Section: Platform Tag */
+.platformTag {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Train Indicator (left edge animation) */
+.LocalLI::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #4CAF50;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.LocalLI:hover::before {
+  background-color: #007bff;
+}
+
+
+
+/* Error message styling */
+.errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .SideNav2 {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Boxes2 a {
+    text-align: center;
+  }
+
+  .LocalLI {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

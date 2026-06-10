@@ -1,0 +1,366 @@
+
+.MainFoodContainer {
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+}
+.form_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+}
+
+.Food_Form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* Spacing between items */
+  flex-wrap: wrap; /* Allow wrapping if the screen size is small */
+}
+
+.Food_Form label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin-right: 5px;
+}
+
+.Food_Form input[type="text"],
+.Food_Form input[type="email"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.Food_Submit {
+  padding: 10px 20px;
+  background-color: #007bff; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.Food_Submit:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.Food_Form input {
+  margin-right: 15px; /* Space between input and label */
+}
+
+.Food_Form i {
+  margin-right: 5px; /* Space between icon and label text */
+}
+
+@media (max-width: 768px) {
+  .Food_Form {
+    flex-direction: column; /* Stack items on smaller screens */
+    gap: 15px;
+  }
+
+  .Food_Form input[type="text"],
+  .Food_Form input[type="email"] {
+    width: 100%; /* Full-width on smaller screens */
+  }
+
+  .Food_Submit {
+    align-self: flex-end; /* Align submit button */
+  }
+}
+
+.cart {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.cart h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  margin-bottom: 30px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #555;
+}
+
+.cart-item span {
+  font-weight: bold;
+}
+
+.total {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2ecc71;
+  margin-bottom: 20px;
+}
+
+
+.btn-pay-now {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pay-now:hover {
+  background-color: #c0392b;
+}
+
+
+.dish:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Main_Navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.IMG-Container1 {
+  display: flex;
+  align-items: center;
+}
+
+.logo1 {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.Change1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Navbar1 ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav_link1 {
+  margin: 0 10px;
+}
+
+.Nav_ATag1 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.Nav_ATag1:hover {
+  color: #ff9800;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: linear-gradient(135deg, #16222a, #859398);
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.hero:hover {
+  transform: rotateX(5deg) rotateY(-5deg);
+  transition: transform 0.5s ease;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero_header {
+  font-size: 5rem;
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero-text .btn222 {
+  background: #ff9800;
+  width: max-content;
+  margin-left: 250px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-text .btn222:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.hero-image img {
+  width: 380px;
+  height: auto;
+  border-radius: 20px;
+  animation: rotateHero 15s linear infinite;
+  box-shadow: none;
+  transform-origin: center;
+  background: none;
+}
+
+
+@keyframes rotateHero {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05); 
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.hero-image img:hover {
+  transform: rotateY(0deg) scale(1.1);
+}
+
+.popular-dishes {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.popular-dishes h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.dish {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dish:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.dish img {
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.dish h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dish p {
+  color: #777;
+  margin: 10px 0;
+}
+
+.price {
+  color: #ff9800;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+/* Button Styling */
+.add-to-cart {
+  background: #ff9800;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-to-cart:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
