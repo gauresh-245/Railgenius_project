@@ -1,4 +1,4 @@
-# 🚆 RailGenius - Smart Railway Reservation & Travel Management System
+# 🚆 RailGenius - Smart Railway Reservation
 
 RailGenius is a full-stack railway travel management platform developed using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**. The system enables users to search trains, book tickets, view train schedules, explore local and metro train services, check station information, and access travel-related services through an interactive user interface.
 
