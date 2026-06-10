@@ -1,0 +1,124 @@
+.FareRateContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.LocalH5{
+  font-size: 20px;
+}
+
+.rtt{
+  
+
+}
+.pass{
+  display: flex;
+  justify-content: sp 
+}
+
+.span1{
+  margin-right: 70px;
+}
+.span2{
+  margin-right: 70px;
+}
+
+span {
+
+  font-size: 18px;
+    font-weight: bold;
+    color: #211f81;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+/* Fare Row */
+.FareRow1, .FareRow2, .FareRow3, .FareRow4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Fare Card */
+.Farecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Farecard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Container11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.rtt {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.Farecard .button-group {
+  display: flex;
+  gap: 10px; /* Adds space between buttons */
+  width: 100%; /* Ensures buttons stretch equally */
+  justify-content: space-around;
+}
+
+.btn33 {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: linear-gradient(45deg, #4CAF50, #81C784);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-grow: 1; /* Makes buttons take equal space */
+  font-size: 1.1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn33:hover {
+  background: linear-gradient(45deg, #388E3C, #66BB6A);
+  transform: scale(1.05);
+}
+
+.btn33:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+  .Farecard {
+    max-width: 100%; /* Makes cards full-width on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn33 {
+    font-size: 0.8rem; /* Adjust button size for smaller screens */
+    padding: 6px 10px;
+  }
+}
+
